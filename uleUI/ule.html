@@ -10,8 +10,16 @@
   <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
   <script src="https://code.highcharts.com/modules/xrange.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/themes/high-contrast-light.js"></script>
+ <script src="ule.js"></script>
 </head>
 
 <body>
@@ -24,10 +32,10 @@
       </div>
 
       <div class="rightIcons ">
-        <i class="material-icons icons1">notifications</i>
-        <i class="material-icons icons1">chat_bubble</i>
-        <i class="material-icons icons1">gps_fixed</i>
-        <i class="material-icons icons1">person</i>
+        <i class="material-icons icons1">notifications</i> <div class="circle red1"></div>
+        <i class="material-icons icons1">chat_bubble</i><div class="circle red2"></div>
+        <i class="material-icons icons1">gps_fixed</i><div class="circle red3"></div>
+        <i class="material-icons icons1">person</i><div class="circle red4"></div>
       </div>
     </div>
   </div>
@@ -95,9 +103,15 @@
         <div class="messageIncome">
           <div class="income">
             <h>Monthly Income</h>
+            <h3 class="amt">$3500 USD</h3>
+            <button class="view">View Details</button>
+            <div id="container"></div>
           </div>
           <div class="message">
             <h>Messages</h>
+            <ul>
+              
+            </ul>
           </div>
         </div>
 
@@ -106,63 +120,32 @@
            
           </div>
           <div class="two">
-         
+            <div class="sk">
+              <button class="button button2">News</button>
+              <p11>The science</p11>
+              <p12>behind the dress</p12>
+              <div class="myIcons">
+                <i class='far fa-comment-alt'>74</i>
+                <i class='fab fa-gratipay' >128</i>
+              </div>
+            </div>
           </div>
           <div class="three">
-         
+            <i class='far fa-clone' style='font-size: 70px;margin-left: 105px;'></i>
+            <h>Knowledge Base</h>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+            <button class="browse">Browse Article</button>
           </div>
         </div>
 
         <div style="overflow-x:auto;">
-        <table >
+        <table class="table" id="active_user">
           <tr>
             <th>Top Active Members</th>
             <th>Views</th>
             <th>Country</th>
             <th>Status</th>
             <th>Comments</th>
-          </tr>
-          <tr>
-            <td>Arden karn</td>
-            <td>125</td>
-            <td>Germany</td>
-            <td>inactive</td>
-            <td>25</td>
-          </tr>
-          <tr>
-           <td>Arden karn</td>
-            <td>125</td>
-            <td>india</td>
-            <td>active</td>
-            <td>25</td>
-          </tr>
-          <tr>
-           <td>Arden karn</td>
-            <td>125</td>
-            <td>Austria</td>
-            <td>inactive</td>
-            <td>25</td>
-          </tr>
-          <tr>
-          <td>Arden karn</td>
-            <td>125</td>
-            <td>UK</td>
-            <td>active</td>
-            <td>25</td>
-          </tr>
-          <tr>
-           <td>Arden karn</td>
-            <td>125</td>
-            <td>Canada</td>
-            <td>inactive</td>
-            <td>25</td>
-          </tr>
-          <tr>
-           <td>Arden karn</td>
-            <td>125</td>
-            <td>Italy</td>
-            <td>active</td>
-            <td>25</td>
           </tr>
         </table>
         </div>
@@ -201,19 +184,12 @@
           </div>
 
           <div class="activity">
-            <div class="card">
-              <div class="sk">
-                <button class="button button2">News</button>
-                <p11>The science</p11>
-                <p12>behind the dress</p12>
-                <div class="myIcons">
-                  <i class='far fa-comment-alt'>74</i>
-                  <i class='fab fa-gratipay' >128</i>
-                </div>
-              </div>
-            </div>
+           
           </div>
-          <div class="last">3</div>
+          <div class="last">
+            <div></div>
+            <div></div>
+          </div>
         </div>
         
       </div>

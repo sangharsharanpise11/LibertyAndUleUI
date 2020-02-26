@@ -37,6 +37,7 @@ body{
 }
 /************************/
 .sidebar {
+  font-family: arial, sans-serif;
   width: 200px;
   position: fixed;
   background-color: #f1f1f1;
@@ -44,7 +45,23 @@ body{
   overflow: auto;
   margin-top: 57px;
 }
-
+.amt{
+  color: cadetblue;
+  font-size: 28px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+.view{
+  background-color: black;
+    color: white;
+    height: 35px;
+    width: 110px;
+    box-shadow: 0px;
+    margin-top: -35px;
+    font-family: sans-serif;
+    font-family: arial, sans-serif;
+    border: none;
+}
 /* Sidebar links */
 .sidebar a {
   display: block;
@@ -119,6 +136,11 @@ div.content {
   width: 280px;
   border-radius: 5px;
   height: 70px;
+}
+.two{
+  background-image: url(./download.jpeg);
+  background-repeat: no-repeat;
+  background-size: 310px 290px;
 }
 .p{
   font-size: 20px;
@@ -253,6 +275,29 @@ p6 {
 .phone{
   margin-top: -130px;
 }
+h{
+  font-weight: 600;
+    font-size: 20px;
+    color: black;
+    margin-left: 60px;
+}
+.browse{
+  background-color: cadetblue;
+  height: 30px;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+p{
+  font-size: 15px;
+  color: grey;
+  margin-left: 15px;
+}
+.three{
+  display: grid;
+  font-size:48px;color:cadetblue;
+  justify-content: center;
+}
 .line{
   background-color: grey;
   width: 264px;
@@ -292,23 +337,88 @@ p6 {
   font-size: 20px;
   display: grid;
   margin: 8px;
+  color: white;
 }
 p11{
   font-size: 20px;
-  margin: -20px;
-  margin-left: -53px;
+  margin-left: -23px;
 }
 p12{
-  margin-top: -30px;
-  margin-left: 4px;
+  margin-top: -1px;
+  margin-left: -19px;
 }
 .button2 {
   background-color: #9068be;
-  margin-top: 250px;
+  margin-top: 157px;
+  margin-left: -22px;
 } 
 .myIcons{
-  margin-top: -35px;
-  margin-left: -39px;
+  margin-top: 3px;
+  margin-left: -18px;
+}
+#container {
+  height: 250px;
+  width: 560px;
+}
+/************ blinking dot *******************/
+@keyframes up-right {
+  0% {
+      opacity: .25
+  }
+  50% {
+      transform: scale (1, 5);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: .25;
+  }
+}
+.circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  opacity: .25;
+}
+.red1 {
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 1147px;
+  -webkit-animation: up-right 1s infinite;
+  -moz-animation: up-right 1s infinite;
+  -o-animation: up-right 1s infinite;
+  animation: up-right 1s infinite;
+}
+.red2{
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 1194px;
+  -webkit-animation: up-right 1s infinite;
+  -moz-animation: up-right 1s infinite;
+  -o-animation: up-right 1s infinite;
+  animation: up-right 1s infinite;
+}
+.red3{
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 1231px;
+  -webkit-animation: up-right 1s infinite;
+  -moz-animation: up-right 1s infinite;
+  -o-animation: up-right 1s infinite;
+  animation: up-right 1s infinite;
+}
+.red4{
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 1272px;
+  -webkit-animation: up-right 1s infinite;
+  -moz-animation: up-right 1s infinite;
+  -o-animation: up-right 1s infinite;
+  animation: up-right 1s infinite;
 }
 /****************** media Query ****************************************************/
 /* @media screen and (max-width: 321px) {
