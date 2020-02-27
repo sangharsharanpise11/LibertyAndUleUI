@@ -52,15 +52,93 @@ body{
   margin-top: 10px;
 }
 .view{
-  background-color: black;
-    color: white;
+  background-color: white;
     height: 35px;
     width: 110px;
     box-shadow: 0px;
-    margin-top: -35px;
+    margin-top: -4px!important;
     font-family: sans-serif;
     font-family: arial, sans-serif;
-    border: none;
+    border-color: darkgreen;
+    outline: 0px;
+    font-size: 15px;
+    color: cadetblue;
+    border: ridge;
+}
+.progress{
+  font-size: 15px;
+  color: #678098;
+  margin-left: -14px;
+  font-weight: 500;
+}
+.progressBar{
+  position: relative;
+  margin-top: -15px;
+  width: 258px;
+  margin-left: 14px;
+}
+.progressBar:before{
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 8px;
+  border-radius: 1000px;
+}
+.progressBar:after{
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width:0;
+  height: 8px;
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation: progressBar1 5s infinite;
+  animation: progressBar2 5s infinite;
+  animation: progressBar3 5s infinite;
+}
+.progressColorFirst::before{
+  background-color: lightgrey;
+
+}
+.progressColorFirst::after{
+  background-color: purple;
+
+}
+.progressColorSecond::before{
+  background-color: lightgrey;
+
+}
+.progressColorSecond::after{
+  background-color: cadetblue;
+
+}
+.progressColorThree::before{
+  background-color: lightgrey;
+
+}
+.progressColorThree::after{
+  background-color: red;
+
+}
+@keyframes progressBar1{
+  to{
+    width: 50%;
+  }
+}
+@keyframes progressBar2{
+  to{
+    width: 90%;
+     }
+}
+@keyframes progressBar3{
+  to{
+    width: 75%;
+  }
 }
 /* Sidebar links */
 .sidebar a {
@@ -100,6 +178,54 @@ div.content {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+.activity{
+  display: grid;
+  justify-content: left;
+}
+h10{
+  font-size: 33px;
+    color: darkslategray;
+    font-weight: 600;
+}
+p10{
+  font-size: 15px;
+  color: cadetblue;
+  margin-left: 2px;
+  font-weight: 600;
+  margin-top: -42px;
+
+}
+h15{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -222px;
+}
+p00{
+  font-size: 20px;
+  color: darkslategray;
+  margin-left: 15px;
+  font-weight: 600;
+}
+p01{
+  color: gray;
+  font-size: 15px;
+  margin-top: -32px;
+}
+p02{
+  color: black;
+  font-size: 15px;
+  margin-top: -50px;
+  margin-left: 203px;
+}
+.online-earn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+}
+.one{
+  display: grid;
 }
 .leftIcons {
   font-size: 20px;
@@ -156,11 +282,15 @@ p1{
   font-weight: 600;
 
 }
+.time{
+  display: grid;
+  margin-left: -65px;
+}
 #container {
   height: 67px;
-  margin-top: -7px;
+  margin-top: 12px;
   width: 307px;
-  margin-left: -17px;
+  margin-left: -14px;
 }
 .messageIncome{
   display: flex;
@@ -170,12 +300,14 @@ p1{
 
 .messageIncome> div {
   background-color: white;
-    color: black;
-    height: 350px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px;
-    border-radius: 5px;
+  color: black;
+  height: 370px;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.earning{
+  margin-top: -69px;
 }
 .income{
   width: 535px;
@@ -204,7 +336,9 @@ table {
   font-size: 15px;
   color: #678098;
 }
-
+.infoData{
+  font-weight: bold;
+}
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -214,6 +348,12 @@ td, th {
   width: 100px;
   height: 100px;
   border-radius: 70%;
+  margin-top: 20px;
+}
+.imageSmall{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   margin-top: 20px;
 }
 .icons{
@@ -250,11 +390,47 @@ p6 {
   background-color: white;
   border-radius: 5px;
 }
+p15{
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+  margin-top: -42px;
+}
+.aaInfo,.bbInfo{
+  display: grid;
+    justify-content: center;
+}
+p16{
+  font-size: 15px;
+  color: grey;
+  margin-top: -53px;
+}
+p17{
+  font-size: 15px;
+  color: grey;
+  margin-top: -53px;
+  font-weight: bold;
+}
+.row{
+  margin-top: -56px;
+}
+.aa{
+  background-color: white;
+  height: 185px;
+  border-radius: 5px;
+}
+.bb{
+  background-color: white;
+  height: 185px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
 .profile{
   width: 320px;
 }
 .last{
   width: 215px;
+  background-color: transparent;
 }
 .activity{
   width: 460px;
@@ -275,11 +451,15 @@ p6 {
 .phone{
   margin-top: -130px;
 }
-h{
+h111{
   font-weight: 600;
     font-size: 20px;
     color: black;
     margin-left: 60px;
+}
+h{
+  font-size: 20px;
+  color: black;
 }
 .browse{
   background-color: cadetblue;
@@ -360,6 +540,10 @@ p12{
   height: 250px;
   width: 560px;
 }
+h11{
+  font-size: 18px;
+  font-weight: 600;
+}
 /************ blinking dot *******************/
 @keyframes up-right {
   0% {
@@ -419,6 +603,38 @@ p12{
   -moz-animation: up-right 1s infinite;
   -o-animation: up-right 1s infinite;
   animation: up-right 1s infinite;
+}
+body{
+      font-family: poppins,sans-serif;
+}
+.messageImage{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 0px;
+}
+.imgData{
+  display: grid;
+  margin-left: 20px;
+}
+p22{
+  color: cadetblue;
+}
+p23{
+  font-size: 12px;
+  color: grey;
+  margin-left: -41px;
+}
+.row1{
+  display: flex;
+  font-size: 15px;
+  margin-top: 17px;
+}
+.line3{
+  background-color: lightgray;
+  width: 417px;
+  margin-top: 8px;
+  height: 1px;
 }
 /****************** media Query ****************************************************/
 /* @media screen and (max-width: 321px) {

@@ -24,6 +24,17 @@ $(document).ready(function () {
     $('#active_user').append(active_data);
   });
 });
+
+/************** button hover ****************************************/
+$(document).ready(function(){
+  $(".view").hover(function(){
+    $(this).css("background-color", "black");
+     $(this).css("color", "white");},
+     function(){
+    $(this).css("background-color", "white");
+     $(this).css("color", "cadetblue");
+  });
+});
 /************* chart *********************************************************************/
 Highcharts.chart('container', {
   chart: {
