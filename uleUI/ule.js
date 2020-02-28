@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".message_icon .fa-comment-alt").click(function () {
-    $(".dropdown").show();
+    $(".dropdown1").show();
   });
 });
 /************************************************************************/

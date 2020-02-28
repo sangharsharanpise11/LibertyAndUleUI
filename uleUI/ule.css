@@ -14,14 +14,17 @@ background-color: white;
   margin-left: -210px;
   margin-top: 28px;
 }
-
+.message_wrap .message_icon.fa-comment-alt{
+  margin-left: -175px;
+  margin-top: 30px;
+}
 .dropdown,.dropdown1{
   width: 300px;
   height: 300px;
   margin-top: 10px;
   background-color: cadetblue;
 }
-.notification_wrap .dropdown,.dropdown1{
+.notification_wrap .dropdown,.message_wrap .dropdown1{
   width: 300px;
   height: 415px;
   background-color: white;
@@ -49,7 +52,7 @@ p000{
     margin-top: -6px;
     margin-left: -5px;
 }
-.notification_wrap .dropdown .notify_item{
+.notification_wrap .dropdown .notify_item,.message_wrap .dropdown1 .notify_item{
   display: flex;
   align-items: center;
   padding: 10px 0;
@@ -57,24 +60,24 @@ p000{
   margin-top: -60px;
 }
 
-.notification_wrap .dropdown .p{
+.notification_wrap .dropdown .p,.message_wrap .dropdown1 .p{
   border-bottom: 1px solid grey;
 }
-.notification_wrap .dropdown .notify_item:last-child{
+.notification_wrap .dropdown .notify_item:last-child,.message_wrap .dropdown1 .notify_item:last-child{
   border-bottom: 0;
 }
 
-.notification_wrap.dropdown .notify_item .notify_img{
+.notification_wrap.dropdown .notify_item .notify_img,.message_wrap.dropdown1 .notify_item .notify_img{
   margin-right: 15px;
   margin-top: 43px;
 }
 
-.notification_wrap.dropdown .notify_item .notify_info p span{
+.notification_wrap.dropdown .notify_item .notify_info p span,.message_wrap.dropdown1 .notify_item .notify_info p span{
   color: cadetblue;
   margin-top: -27px;
 }
 
-.notification_wrap .dropdown .notify_item .notify_info .notify_item{
+.notification_wrap .dropdown .notify_item .notify_info .notify_item,.message_wrap .dropdown1 .notify_item .notify_info .notify_item{
   display: flex;
   align-items: center;
   /* padding: 10px 0; */
@@ -89,12 +92,12 @@ p000{
   margin-top: 43px;
 }
 
-.notification_wrap .dropdown:before{
+.notification_wrap .dropdown:before,.message_wrap .dropdown1:before{
   content: "";
   position: absolute;
 }
 
-.notification_wrap .dropdown .active{
+.notification_wrap .dropdown .active,.message_wrap .dropdown1 .active{
 display: block;
 }
 /*****************************************************************/
