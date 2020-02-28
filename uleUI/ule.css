@@ -1,3 +1,110 @@
+/* .notification_wrap{
+  width: 300px;
+  background-color: cadetblue;
+}
+.message_wrap{
+  width: 300px;
+  background-color: cadetblue;
+} */
+/* .wrapper{
+background-color: white;
+} */
+.notification_wrap .notification_icon .fa-bell{
+  cursor: pointer;
+  margin-left: -210px;
+  margin-top: 28px;
+}
+
+.dropdown,.dropdown1{
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  background-color: cadetblue;
+}
+.notification_wrap .dropdown,.dropdown1{
+  width: 300px;
+  height: 415px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 55px;
+  padding: 5px;
+  position: relative;
+  display: none;
+  border: ridge;
+}
+p000{
+  font-size: 15px;
+    color: grey;
+    margin-left: 15px;
+    word-wrap: break-word;
+    margin-top: -12px;
+}
+.recent{
+  color: blueviolet;
+    font-size: 18px;
+    background-color: aliceblue;
+    height: 50px;
+    width: 311px;
+    text-align: center;
+    margin-top: -6px;
+    margin-left: -5px;
+}
+.notification_wrap .dropdown .notify_item{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  margin-top: -60px;
+}
+
+.notification_wrap .dropdown .p{
+  border-bottom: 1px solid grey;
+}
+.notification_wrap .dropdown .notify_item:last-child{
+  border-bottom: 0;
+}
+
+.notification_wrap.dropdown .notify_item .notify_img{
+  margin-right: 15px;
+  margin-top: 43px;
+}
+
+.notification_wrap.dropdown .notify_item .notify_info p span{
+  color: cadetblue;
+  margin-top: -27px;
+}
+
+.notification_wrap .dropdown .notify_item .notify_info .notify_item{
+  display: flex;
+  align-items: center;
+  /* padding: 10px 0; */
+  border-bottom: 1px solid grey;
+  margin-top: -30px;
+}
+
+.image2{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 43px;
+}
+
+.notification_wrap .dropdown:before{
+  content: "";
+  position: absolute;
+}
+
+.notification_wrap .dropdown .active{
+display: block;
+}
+/*****************************************************************/
+.aaa{
+  display: flex;
+  justify-content: start;
+  margin-top: 41px;
+  color: cadetblue;
+ 
+}
 body{
   width: 100%;
   height: 100%;
@@ -34,6 +141,7 @@ body{
   padding: 22px;
   font-size: 20px!important;
   padding-left: 0px;
+  outline: none;
 }
 /************************/
 .sidebar {
@@ -217,7 +325,8 @@ p02{
   color: black;
   font-size: 15px;
   margin-top: -50px;
-  margin-left: 203px;
+  margin-left: 203px;  word-wrap: break-word;
+
 }
 .online-earn{
   display: flex;
@@ -228,8 +337,7 @@ p02{
   display: grid;
 }
 .leftIcons {
-  font-size: 20px;
-  margin-left: -600px;
+font-size: 20px;
 }
 .rightIcons{
   flex-direction: row;
@@ -471,7 +579,8 @@ h{
 p{
   font-size: 15px;
   color: grey;
-  margin-left: 15px;
+  margin-left: 15px;  word-wrap: break-word;
+
 }
 .three{
   display: grid;
@@ -618,12 +727,16 @@ body{
   margin-left: 20px;
 }
 p22{
-  color: cadetblue;
+  color: cadetblue; 
+  
 }
 p23{
   font-size: 12px;
   color: grey;
   margin-left: -41px;
+}
+.textWrap{
+  word-wrap: break-word;
 }
 .row1{
   display: flex;

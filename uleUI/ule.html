@@ -10,13 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
-  <!-- <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
-  <!-- <script src="https://code.highcharts.com/modules/series-label.js"></script> -->
-  <!-- <script src="https://code.highcharts.com/highcharts-more.js"></script> -->
   <script src="https://code.highcharts.com/themes/high-contrast-light.js"></script>
- <script src="ule.js"></script>
+  <script src="./ule.js"></script>
 </head>
 
 <body>
@@ -28,12 +24,140 @@
         <i class="fa fa-search icons1"></i>
       </div>
 
-      <div class="rightIcons ">
-        <i class="material-icons icons1">notifications</i> <div class="circle red1"></div>
-        <i class="material-icons icons1">chat_bubble</i><div class="circle red2"></div>
-        <i class="material-icons icons1">gps_fixed</i><div class="circle red3"></div>
-        <i class="material-icons icons1">person</i>
-      </div>
+     <div class="rightIcons ">
+      <!--   <i class="material-icons icons1" id="bell">notifications</i> <div class="circle red1"></div>
+        <i class="material-icons icons1" id="inbox">chat_bubble</i><div class="circle red2"></div>
+        <i class="material-icons icons1" id="target">gps_fixed</i><div class="circle red3"></div>
+        <i class="material-icons icons1" id="idProfile">person</i>
+      </div> -->
+        <!-- <div class="wrapper" style="background-color: white;"> -->
+          <div class="notification_wrap">
+              <div class="notification_icon">
+                <i class="fas fa-bell"></i>
+                <!-- <i class="material-icons icons1" id="bell">notifications</i> <div class="circle red1"></div> -->
+              </div>
+              <div class="dropdown">
+                <div class="recent">Recent Notifications</div>
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 10px;color: cadetblue;">See All</div>
+              </div>
+            </div>
+
+       <!-- message  -->
+     <div class="message_wrap">
+            <div class="message_icon">
+               <i class="fas fa-comment-alt"></i>
+              </div>
+              <div class="dropdown1">
+                <div class="recent">2 New Messages</div>
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="notify_img">
+                    <img src="./download.jpeg" alt="" class="image2">
+                  </div>
+                  <div class="notify_info">
+                    <div class="aaa">
+                      <p><b>Sangharsha Ranpise</b></p>
+                      <p>02:34 PM</p>
+                    </div>
+                    <p000>Alex commended on your <span>timeline share</span></p000>
+                   </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 10px;color: cadetblue;">See All</div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 
@@ -131,7 +255,7 @@
                 </div>
                 <div class="imgData">
                   <p21>Sangharsha Ranpise</p21>
-                  <p22>I shared this on my fb wall a few months back</p22>
+                  <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
                 </div>
                 <p23>May 22,2010</p23>
             </div>
@@ -142,7 +266,7 @@
               </div>
               <div class="imgData">
                 <p21>Sangharsha Ranpise</p21>
-                <p22>I shared this on my fb wall a few months back</p22>
+                <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
               </div>
               <p23>May 22,2010</p23>
           </div>
@@ -153,7 +277,7 @@
             </div>
             <div class="imgData">
               <p21>Sangharsha Ranpise</p21>
-              <p22>I shared this on my fb wall a few months back</p22>
+              <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
             </div>
             <p23>May 22,2010</p23>
         </div>
@@ -164,7 +288,7 @@
           </div>
           <div class="imgData">
             <p21>Sangharsha Ranpise</p21>
-            <p22>I shared this on my fb wall a few months back</p22>
+            <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
           </div>
           <p23>May 22,2010</p23>
       </div>
@@ -323,7 +447,7 @@
   </div>
 
 </body>
-<script src="./ule.js"></script>
+
 
 </html>
 

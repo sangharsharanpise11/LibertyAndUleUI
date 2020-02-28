@@ -1,3 +1,16 @@
+/**************************************************************************/
+$(document).ready(function () {
+  $(".notification_icon .fa-bell").click(function () {
+    $(".dropdown").show();
+  });
+});
+
+$(document).ready(function () {
+  $(".message_icon .fa-comment-alt").click(function () {
+    $(".dropdown").show();
+  });
+});
+/************************************************************************/
 $(document).ready(function () {
   console.log("hello" )
   $.getJSON("./messages.json", function (data) {
