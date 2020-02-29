@@ -1,13 +1,25 @@
 /**************************************************************************/
 $(document).ready(function () {
   $(".notification_icon .fa-bell").click(function () {
-    $(".dropdown").show();
+    $(".dropdown").toggle();
   });
 });
 
 $(document).ready(function () {
   $(".message_icon .fa-comment-alt").click(function () {
-    $(".dropdown1").show();
+    $(".dropdown1").toggle();
+  });
+});
+
+$(document).ready(function () {
+  $(".crosshair_icon .fa-crosshairs").click(function () {
+    $(".dropdown2").toggle();
+  });
+});
+
+$(document).ready(function () {
+  $(".profile_icon .fa-user").click(function () {
+    $(".dropdown3").toggle();
   });
 });
 /************************************************************************/

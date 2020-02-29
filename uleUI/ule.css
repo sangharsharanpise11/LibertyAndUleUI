@@ -9,6 +9,23 @@
 /* .wrapper{
 background-color: white;
 } */
+.line11{
+  width: 135px;
+  height: 1px;
+  background-color: grey;
+  margin-top: 10px;
+}
+p101{
+  font-size: 15px;
+    color: cadetblue;
+    margin-left: 15px;
+    word-wrap: break-word;
+}
+.inbox,.setting,.logout,.lockscreen{
+  display: flex;margin-top: 10px;
+  justify-content: space-around;
+}
+
 .notification_wrap .notification_icon .fa-bell{
   cursor: pointer;
   margin-left: -210px;
@@ -16,17 +33,48 @@ background-color: white;
 }
 .message_wrap .message_icon.fa-comment-alt{
   margin-left: -175px;
+  cursor: pointer;
   margin-top: 30px;
 }
-.dropdown,.dropdown1{
+.crosshair_wrap .crosshair_icon.fa-crosshairs{
+  margin-left: -140px;
+  cursor: pointer;
+  margin-top: 28px;
+}
+
+.dropdown,.dropdown1,.dropdown2{
   width: 300px;
   height: 300px;
   margin-top: 10px;
   background-color: cadetblue;
 }
-.notification_wrap .dropdown,.message_wrap .dropdown1{
+.notification_wrap .dropdown,
+.message_wrap .dropdown1{
   width: 300px;
   height: 415px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 55px;
+  padding: 5px;
+  position: relative;
+  display: none;
+  border: ridge;
+}
+
+.profile_wrap .dropdown3{
+  width: 130px;
+  height: 149px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 55px;
+  padding: 5px;
+  position: relative;
+  display: none;
+  border: ridge;
+}
+.crosshair_wrap .dropdown2 {
+  width: 300px;
+  height: 300px;
   background-color: white;
   border-radius: 5px;
   margin: 55px;
@@ -52,7 +100,9 @@ p000{
     margin-top: -6px;
     margin-left: -5px;
 }
-.notification_wrap .dropdown .notify_item,.message_wrap .dropdown1 .notify_item{
+.notification_wrap .dropdown .notify_item,
+.message_wrap .dropdown1 .notify_item
+{
   display: flex;
   align-items: center;
   padding: 10px 0;
@@ -60,27 +110,50 @@ p000{
   margin-top: -60px;
 }
 
+.crosshair_wrap .dropdown2 .notify_item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: -42px
+}
+/* .profile_wrap .dropdown3 .notify_item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: -42px
+  
+} */
+
 .notification_wrap .dropdown .p,.message_wrap .dropdown1 .p{
   border-bottom: 1px solid grey;
 }
-.notification_wrap .dropdown .notify_item:last-child,.message_wrap .dropdown1 .notify_item:last-child{
+
+.notification_wrap .dropdown .notify_item:last-child,
+.message_wrap .dropdown1 .notify_item:last-child,
+.crosshair_wrap .dropdown2.notify_item:last-child
+.profile_wrap .dropdown3 .notify_item:last-child{
   border-bottom: 0;
 }
 
-.notification_wrap.dropdown .notify_item .notify_img,.message_wrap.dropdown1 .notify_item .notify_img{
+.notification_wrap.dropdown .notify_item .notify_img,
+.message_wrap.dropdown1 .notify_item .notify_img
+{
   margin-right: 15px;
   margin-top: 43px;
 }
 
-.notification_wrap.dropdown .notify_item .notify_info p span,.message_wrap.dropdown1 .notify_item .notify_info p span{
+.notification_wrap.dropdown .notify_item .notify_info p span,
+.message_wrap.dropdown1 .notify_item .notify_info p span{
   color: cadetblue;
   margin-top: -27px;
 }
 
-.notification_wrap .dropdown .notify_item .notify_info .notify_item,.message_wrap .dropdown1 .notify_item .notify_info .notify_item{
+.notification_wrap .dropdown .notify_item .notify_info .notify_item,
+.message_wrap .dropdown1 .notify_item .notify_info .notify_item,
+.crosshair_wrap .dropdown2.notify_item.notify_info .notify_item
+{
   display: flex;
   align-items: center;
-  /* padding: 10px 0; */
   border-bottom: 1px solid grey;
   margin-top: -30px;
 }
@@ -92,22 +165,25 @@ p000{
   margin-top: 43px;
 }
 
-.notification_wrap .dropdown:before,.message_wrap .dropdown1:before{
+.notification_wrap .dropdown:before,
+.message_wrap .dropdown1:before,
+.crosshair_wrap .dropdown2:before
+
+{
   content: "";
   position: absolute;
 }
 
-.notification_wrap .dropdown .active,.message_wrap .dropdown1 .active{
+.notification_wrap .dropdown .active,.message_wrap .dropdown1 .active,.crosshair_wrap .dropdown2 .active{
 display: block;
 }
 /*****************************************************************/
 .aaa{
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   margin-top: 41px;
   color: cadetblue;
- 
-}
+ }
 body{
   width: 100%;
   height: 100%;
@@ -211,6 +287,9 @@ body{
   animation: progressBar1 5s infinite;
   animation: progressBar2 5s infinite;
   animation: progressBar3 5s infinite;
+  animation: progressBar4 5s infinite;
+  animation: progressBar5 5s infinite;
+  animation: progressBar6 5s infinite;
 }
 .progressColorFirst::before{
   background-color: lightgrey;
@@ -247,6 +326,21 @@ body{
      }
 }
 @keyframes progressBar3{
+  to{
+    width: 75%;
+  }
+}
+@keyframes progressBar4{
+  to{
+    width: 50%;
+  }
+}
+@keyframes progressBar5{
+  to{
+    width: 90%;
+     }
+}
+@keyframes progressBar6{
   to{
     width: 75%;
   }
@@ -397,11 +491,11 @@ p1{
   display: grid;
   margin-left: -65px;
 }
+
 #container {
-  height: 67px;
-  margin-top: 12px;
-  width: 307px;
-  margin-left: -14px;
+  height: 257px;
+  width: 560px;
+  margin-left: -15px;
 }
 .messageIncome{
   display: flex;
@@ -648,10 +742,7 @@ p12{
   margin-top: 3px;
   margin-left: -18px;
 }
-#container {
-  height: 250px;
-  width: 560px;
-}
+
 h11{
   font-size: 18px;
   font-weight: 600;

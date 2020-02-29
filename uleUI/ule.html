@@ -10,9 +10,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/modules/export-data.js"></script>
-  <script src="https://code.highcharts.com/themes/high-contrast-light.js"></script>
-  <script src="./ule.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
 </head>
 
 <body>
@@ -97,8 +98,7 @@
        <!-- message  -->
      <div class="message_wrap">
             <div class="message_icon">
-               <i class="fas fa-comment-alt" style="    margin-left: -175px;
-               margin-top: 30px;"></i>
+               <i class="fas fa-comment-alt" style=" margin-left: -175px; margin-top: 30px;"></i>
               </div>
               <div class="dropdown1">
                 <div class="recent">2 New Messages</div>
@@ -112,7 +112,7 @@
                       <p>02:34 PM</p>
                     </div>
                     <p000>Alex commended on your <span>timeline share</span></p000>
-                   </div>
+                 </div>
                 </div>
 
                 <div class="notify_item">
@@ -157,6 +157,115 @@
                 <div style="text-align: center; margin-top: 10px;color: cadetblue;">See All</div>
               </div>
             </div>
+
+            <div class="crosshair_wrap">
+              <div class="crosshair_icon">
+                <i class="fas fa-crosshairs" style="margin-left: -140px; cursor: pointer; margin-top: 28px;"></i>
+              </div>
+              <div class="dropdown2">
+                <div class="recent">Task Update</div>
+               
+                <div class="notify_item">
+                  <div class="a1">
+                      <div class="aaa">
+                        <p><b>Task One</b></p>
+                        <p>95% completed</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progressBar progressColorFirst">
+                          <div class="progressBar4"></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              
+
+                <div class="notify_item">
+                  <div class="a1">
+                    <div class="aaa">
+                        <p><b>Task Two</b></p>
+                        <p>95% completed</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progressBar progressColorSecond">
+                          <div class="progressBar4"></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="notify_item">
+                  <div class="a1">
+                    <div class="aaa">
+                        <p><b>Task Three</b></p>
+                        <p>95% completed</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progressBar progressColorThree">
+                          <div class="progressBar5"></div>
+                        </div>
+                    </div>
+                  </div> 
+                 </div>
+
+               <div class="notify_item">
+                  <div class="a1">
+                      <div class="aaa">
+                        <p><b>Task Four</b></p>
+                        <p>95% completed</p>
+                      </div>
+                      <div class="progress">
+                        <div class="progressBar progressColorFirst">
+                          <div class="progressBar6"></div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+                <div style="text-align: center; margin-top: 21px; color: cadetblue;">See All</div>
+              </div>
+            </div>
+
+          <div class="profile_wrap">
+            <div class="profile_icon">
+              <i class="fas fa-user" style="margin-left: -112px; cursor: pointer;  margin-top: 29px;"></i>
+            </div>
+            <div class="dropdown3">
+                <div class="notify_item">
+                  <div class="inbox">
+                    <i class="fas fa-envelope"></i>
+                    <p101>Inbox</p101>
+                  </div>
+                </div>
+
+                <div class="line11"></div>
+                
+                <div class="notify_item">
+                  <div class="setting">
+                    <i class="fas fa-cog"></i>
+                    <p101>Setting</p101>
+                  </div>
+                </div>
+
+                <div class="line11"></div>
+
+                <div class="notify_item">
+                   <div class="lockscreen">
+                    <i class="fas fa-lock"></i>
+                    <p101>Lock Screen</p101>
+                   </div>
+                </div>
+                
+                <div class="line11"></div>
+
+                <div class="notify_item">
+                   <div class="logout">
+                    <i class="fa fa-power-off"></i>
+                    <p101>Logout</p101>
+                   </div>
+                </div>
+                
+            </div>
+          </div>  
           </div>
         </div>
     </div>
@@ -448,7 +557,7 @@
   </div>
 
 </body>
-
+<script src="./ule.js"></script>
 
 </html>
 
