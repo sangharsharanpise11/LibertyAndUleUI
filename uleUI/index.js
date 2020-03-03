@@ -29,16 +29,6 @@ $(document).ready(function () {
   });
 });
 /************************************************************************/
-$(document).ready(function () {
-  console.log("hello" )
-  $.getJSON("./messages.json", function (data) {
-    $.each(data.messages, function () {
-    //  $("ul").append("<li>"+this['name'])
-    console.log(data.messages )
-      $("ul").append("<li>" + this['name'] + "</li>" + "<li>" + this['text'] + "</li>" + "<br>");
-    });
-  });
-});
 
 /*************** table from json ****************************************/
 $(document).ready(function () {

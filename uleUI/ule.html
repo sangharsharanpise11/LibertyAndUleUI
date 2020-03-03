@@ -19,23 +19,22 @@
 <body>
   <div class="navbar">
     <div class="navbarContents">
-         <h3>ule</h3>
+         <h3 style="margin-left: 123px;">ule</h3>
       <div class="leftIcons">
          <span onclick="openNav()">&#9776; </span>
         <i class="fa fa-search icons1"></i>
+        <div class="searchBar">
+          <form class="action">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
       </div>
 
-     <div class="rightIcons ">
-      <!--   <i class="material-icons icons1" id="bell">notifications</i> <div class="circle red1"></div>
-        <i class="material-icons icons1" id="inbox">chat_bubble</i><div class="circle red2"></div>
-        <i class="material-icons icons1" id="target">gps_fixed</i><div class="circle red3"></div>
-        <i class="material-icons icons1" id="idProfile">person</i>
-      </div> -->
-        <!-- <div class="wrapper" style="background-color: white;"> -->
-          <div class="notification_wrap">
+     <div class="rightIcons " style="width: fit-content;">
+           <div class="notification_wrap">
               <div class="notification_icon">
-                <i class="fas fa-bell"></i>
-                <!-- <i class="material-icons icons1" id="bell">notifications</i> <div class="circle red1"></div> -->
+                <i class="fas fa-bell"> <div class="circle red1"></div></i>
               </div>
               <div class="dropdown">
                 <div class="recent">Recent Notifications</div>
@@ -98,7 +97,7 @@
        <!-- message  -->
      <div class="message_wrap">
             <div class="message_icon">
-               <i class="fas fa-comment-alt" style=" margin-left: -175px; margin-top: 30px;"></i>
+               <i class="fas fa-comment-alt" style=" margin-left: -175px; margin-top: 30px;"> <div class="circle red2"></div></i>
               </div>
               <div class="dropdown1">
                 <div class="recent">2 New Messages</div>
@@ -160,7 +159,7 @@
 
             <div class="crosshair_wrap">
               <div class="crosshair_icon">
-                <i class="fas fa-crosshairs" style="margin-left: -140px; cursor: pointer; margin-top: 28px;"></i>
+                <i class="fas fa-crosshairs" style="margin-left: -140px; cursor: pointer; margin-top: 28px;"> <div class="circle red3"></div></i>
               </div>
               <div class="dropdown2">
                 <div class="recent">Task Update</div>

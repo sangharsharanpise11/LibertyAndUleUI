@@ -1,21 +1,497 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Skills Bar</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-    <div class="container">
-        <ul>
-            <li class="html">HTML</li>
-            <li class="css">CSS</li>
-            <li class="js">JavaScript</li>
-            <li class="ng">Angular</li>
-        </ul>
+<html>
+  <head>
+    <title>New ULE</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+        <h3 style="width: fit-content; margin-left: 90px;">ule</h3>
+        <div class="leftIcons">
+                <ul >
+                    <li><a><span onclick="openNav()">&#9776; </span></a></li>
+                    <li><a><i class="fa fa-search icons1"></i></a> 
+                    <ul>
+                     <li><div class="search-container">
+                            <form>
+                              <input type="text" placeholder="Search.." name="search" style="width: 250px; height: 30px;outline: none;border-radius: 50px;">
+                              <button type="submit"><i class="fa fa-search" style="font-size: 22px;"></i></button>
+                            </form>
+                          </div></li>
+                   </ul></li>
+                </ul> 
+        </div>
+    
+        <div  class="rightIcons" style="width: fit-content;">
+            <ul>
+                <li ><a><i class="fas fa-bell" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><div class="recent">Recent Notifications</div><a>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./download.jpeg" alt="" class="image2">
+                                </div>
+                                <div class="info">
+                                    <div class="aaa">
+                                        <p><b>Sangharsha Ranpise</b></p>
+                                        <p>02:34 PM</p>
+                                    </div>
+                                    <p000>Alex commended on your <span>timeline share</span></p000>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a> 
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./download.jpeg" alt="" class="image2">
+                                </div>
+                                <div class="info">
+                                    <div class="aaa">
+                                        <p><b>Sangharsha Ranpise</b></p>
+                                        <p>02:34 PM</p>
+                                    </div>
+                                        <p000>Alex commended on your <span>timeline share</span></p000>
+                                </div>
+                            </div></a></li>
+                        <li><a>
+                             <div class="item">
+                                <div class="img">
+                                    <img src="./download.jpeg" alt="" class="image2">
+                                </div>
+                                <div class="info">
+                                    <div class="aaa">
+                                        <p><b>Sangharsha Ranpise</b></p>
+                                        <p>02:34 PM</p>
+                                    </div>
+                                        <p000>Alex commended on your <span>timeline share</span></p000>
+                                </div>
+                             </div></a>
+                             <div style="text-align: center; margin-top: -10px; color: white;">See All</div>
+                            </li>
+                    </ul>
+                 </li>
+                
+                <li ><a><i class="fas fa-comment-alt" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><div class="recent">2 New Messages</div>
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./download.jpeg" alt="" class="image2">
+                                </div>
+                                <div class="info">
+                                    <div class="aaa">
+                                        <p><b>Sangharsha Ranpise</b></p>
+                                        <p>02:34 PM</p>
+                                    </div>
+                                    <p000>Alex commended on your <span>timeline share</span></p000>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li><a> 
+                            <div class="item">
+                                <div class="img">
+                                    <img src="./download.jpeg" alt="" class="image2">
+                                </div>
+                                <div class="info">
+                                    <div class="aaa">
+                                        <p><b>Sangharsha Ranpise</b></p>
+                                        <p>02:34 PM</p>
+                                    </div>
+                                        <p000>Alex commended on your <span>timeline share</span></p000>
+                                </div>
+                            </div></a></li>
+                        <li><a>
+                             <div class="item">
+                                <div class="img">
+                                    <img src="./download.jpeg" alt="" class="image2">
+                                </div>
+                                <div class="info">
+                                    <div class="aaa">
+                                        <p><b>Sangharsha Ranpise</b></p>
+                                        <p>02:34 PM</p>
+                                    </div>
+                                        <p000>Alex commended on your <span>timeline share</span></p000>
+                                </div>
+                             </div></a>
+                             <div style="text-align: center; margin-top: -10px; color: white;">See All</div>
+                            </li>
+                    </ul>
+                </li>
+                <li ><a><i class="fas fa-crosshairs" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><div class="recent">Task Update</div>
+                            <a><div class="item">
+                                <div class="a1">
+                                   <div class="aaa">
+                                     <p><b>Task One</b></p>
+                                     <p>95% completed</p>
+                                   </div>
+                                   <div class="progress">
+                                     <div class="progressBar progressColorFirst">
+                                       <div class="progressBar4"></div>
+                                     </div>
+                                   </div>
+                               </div>
+                             </div></a></li>
+                        <li><a><div class="item">
+                            <div class="a1">
+                               <div class="aaa">
+                                 <p><b>Task One</b></p>
+                                 <p>95% completed</p>
+                               </div>
+                               <div class="progress">
+                                 <div class="progressBar progressColorSecond">
+                                   <div class="progressBar5"></div>
+                                 </div>
+                               </div>
+                           </div>
+                         </div></a></li>
+                        <li><a><div class="item">
+                            <div class="a1">
+                               <div class="aaa">
+                                 <p><b>Task One</b></p>
+                                 <p>95% completed</p>
+                               </div>
+                               <div class="progress">
+                                 <div class="progressBar progressColorThree">
+                                   <div class="progressBar6"></div>
+                                 </div>
+                               </div>
+                           </div>
+                         </div></a><div style="text-align: center; margin-top: -10px; color: white;">See All</div>
+                        </li>
+                    </ul>
+                </li>
+                <li ><a><i class="fas fa-user" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a>
+                            <div class="item">
+                            <div class="inbox">
+                              <i class="fas fa-envelope"></i>
+                              <p101>Inbox</p101>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a><div class="item">
+                            <div class="setting">
+                              <i class="fas fa-cog"></i>
+                              <p101>Setting</p101>
+                            </div>
+                          </div></a></li>
+                        <li><a><div class="item">
+                            <div class="lockscreen">
+                             <i class="fas fa-lock"></i>
+                             <p101>Lock Screen</p101>
+                            </div>
+                         </div></a></li>
+                        <li><a> <div class="item">
+                            <div class="logout">
+                             <i class="fa fa-power-off"></i>
+                             <p101>Logout</p101>
+                            </div>
+                         </div></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</body>
+    <div class="sidebarBody">
+        <div class="sidebar" id="bar">
+          <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+          <h3>Main</h3>
+          <a class="active" href="">Dashboard</a>
+          <h3>Components</h3>
+          <a href="#" >Chart</a>
+          <a href="#">Email</a>
+          <a href="#">Calender</a>
+          <a href="#">Widget</a>
+          <a href="#">Components</a>
+          <a href="#">Form</a>
+          <a href="#">Table</a>
+          <a href="#">Map</a>
+          <h3>Extra</h3>
+          <a href="#">Pages</a>
+          <a href="#">Invoice summary</a>
+        </div>
+    
+        <div class="content-body">
+          <div class="container">
+            <div class="data1">
+              <div class="left">
+                <h style="font-weight: bold;">Hello,</h>
+                <h>Welcome here</h>
+              </div>
+              <div class="right">
+                <h>Home ></h>
+                <h style="color: blueviolet;">Dashboard</h>
+              </div>
+            </div>
+    
+            <div class="flex-container">
+              <div class="first">
+                <div class="f">
+                  <p1>Download</p1>
+                  <i class="material-icons" style="color:blueviolet">cloud_download</i>
+                </div>
+                <div class="progress">
+                  <p>50% complete</p>
+                  <div class="progressBar progressColorFirst">
+                    <div class="progressBar1"></div>
+                  </div>
+                </div>
+                
+                <!-- <div id="container"></div> -->
+              </div>
+    
+              <div class="second">
+                <div class="s">
+                  <p1>Upload</p1>
+                  <i class="material-icons" style="color:lightseagreen">cloud_upload</i>
+                </div>
+                <div class="progress">
+                  <p>90% complete</p>
+                  <div class="progressBar progressColorSecond">
+                    <div class="progressBar2"></div>
+                  </div>
+                </div>
+                <!-- <div id="container"></div> -->
+    
+              </div>
+    
+              <div class="third">
+                <div class="t">
+                  <p1>Ticket</p1>
+                  <i class='fas fa-file-alt' style="color: red; font-size: 20px;"></i>
+                </div>
+                <div class="progress">
+                  <p>75% Ticket checked</p>
+                  <div class="progressBar progressColorThree">
+                    <div class="progressBar3"></div>
+                  </div>
+                </div>
+                <!-- <div id="container"></div> -->
+    
+              </div>
+    
+            </div>
+            <div class="messageIncome">
+              <div class="income">
+                <h11>Monthly Income</h11>
+                <h3 class="amt">$3500 USD</h3>
+                <button class="view">View Details</button>
+                <div id="container"></div>
+              </div>
+              <div class="message">
+                <h11>Messages</h11>
+                <div class="row1">
+                    <div>
+                      <img src="download.jpeg" class="messageImage">
+                    </div>
+                    <div class="imgData">
+                      <p21>Sangharsha Ranpise</p21>
+                      <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
+                    </div>
+                    <p23>May 22,2010</p23>
+                </div>
+                <div class="line3"></div>
+                <div class="row1">
+                  <div>
+                    <img src="download.jpeg" class="messageImage">
+                  </div>
+                  <div class="imgData">
+                    <p21>Sangharsha Ranpise</p21>
+                    <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
+                  </div>
+                  <p23>May 22,2010</p23>
+              </div>
+              <div class="line3"></div>
+              <div class="row1">
+                <div>
+                  <img src="download.jpeg" class="messageImage">
+                </div>
+                <div class="imgData">
+                  <p21>Sangharsha Ranpise</p21>
+                  <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
+                </div>
+                <p23>May 22,2010</p23>
+            </div>
+            <div class="line3"></div>
+            <div class="row1">
+              <div>
+                <img src="download.jpeg" class="messageImage">
+              </div>
+              <div class="imgData">
+                <p21>Sangharsha Ranpise</p21>
+                <p22 class="textWrap">I shared this on my fb wall a few months back</p22>
+              </div>
+              <p23>May 22,2010</p23>
+          </div>
+              </div>
+            </div>
+    
+            <div class="threeFlex">
+              <div class="one">
+               <h10>$6,256.32</h10>
+               <p10>Total Revenue</p10>
+               <div class="earning">
+                 <p00>2,536</p00>
+                 <div class="online-earn">
+                   <p>online earning</p><p>50%</p>
+                 </div>
+                 <div class="progressBar progressColorFirst">
+                  <div class="progressBar1"></div>
+                </div><br>
+                <p00>2,536</p00>
+                <div class="online-earn">
+                  <p>offline earning</p><p>50%</p>
+                </div>
+                <div class="progressBar progressColorSecond">
+                 <div class="progressBar2"></div>
+               </div>
+               </div>
+              </div>
+    
+              <div class="two">
+                <div class="sk">
+                  <button class="button button2">News</button>
+                  <p11>The science</p11>
+                  <p12>behind the dress</p12>
+                  <div class="myIcons">
+                    <i class='far fa-comment-alt'>74</i> |
+                    <i class='fab fa-gratipay' >128</i>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="three">
+                <i class='far fa-clone' style='font-size: 70px;margin-left: 105px;'></i>
+                <h111>Knowledge Base</h111>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                <button class="browse">Browse Article</button>
+              </div>
+            </div>
+    
+            <div style="overflow-x:auto;">
+            <table class="table" id="active_user">
+              <tr>
+                <th>Top Active Members</th>
+                <th>Views</th>
+                <th>Country</th>
+                <th>Status</th>
+                <th>Comments</th>
+              </tr>
+            </table>
+            </div>
+    
+            <div class="flex-container-lastRow">
+              <div class="profile">
+                <div class="data">
+                    <div >
+                      <img src="download.jpeg" class="image">
+                    </div>
+                    <p5>Sangharsha Ranpise</p5>
+                    <p6>Web Developer</p6>
+                    <div class="icons">
+                      <i class="fa fa-facebook-square" style="font-size:24px"></i>
+                      <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                      <i class="fa fa-twitter-square" style="font-size:24px"></i>
+                      <i class="fa fa-pinterest" style="font-size:24px"></i>
+                    </div>
+                    <div class="information">
+                      <div class="name">
+                        <td class="infoData"><b>Name:</b>  </td>
+                        <td> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   Sangharsha</td>
+                     </div><br>
+                     <div class="line"></div>
+                      <div class="email">
+                        <td class="infoData"><b>Email: </b> </td>
+                        <td> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  sangharsha@gmail.com</td>
+                      </div><br>
+                      <div class="line1"></div>
+                    <div class="phone">
+                     <td class="infoData"><b>Phone:</b>   </td>
+                     <td> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;  +943522223</td>
+                    </div>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="activity">
+               <h15>Activity Timeline</h15>
+               
+                <div class="time">
+                  <p01>10 minutes ago</p01>
+                  <p02>I shared this on my fb wall a few months back</p02>
+                </div>
+                <div class="time">
+                  <p01>50 minutes ago</p01>
+                  <p02>I shared this on my fb wall a few months back</p02>
+                </div>
+                <div class="time">
+                  <p01>13 minutes ago</p01>
+                  <p02>I shared this on my fb wall a few months back</p02>
+                </div>
+                <div class="time">
+                  <p01>43 minutes ago</p01>
+                  <p02>I shared this on my fb wall a few months back</p02>
+                </div>
+             
+              </div>
+              <div class="last" style="background-color: transparent;">
+                <div class="twoProfile">
+                  
+                  <div class="aa">
+                    <div>
+                      <img src="download.jpeg" class="imageSmall">
+                    </div>
+                    <div class="aaInfo">
+                      <p15>Sangharsha Ranpise</p15>
+                      <div class="row">
+                        <p16>status :</p16>
+                        <p17>online</p17>
+                      </div>
+                      <div class="row">
+                        <p16>Response time :</p16>
+                        <p17>3 Hours</p17>
+                      </div>
+                    </div>
+                 </div>
+    
+                 <div class="bb">
+                  <div>
+                    <img src="download.jpeg" class="imageSmall">
+                  </div>
+                  <div class="aaInfo">
+                    <p15>Sangharsha Ranpise</p15>
+                    <div class="row">
+                      <p16>status :</p16>
+                      <p17>online</p17>
+                    </div>
+                    <div class="row">
+                      <p16>Response time :</p16>
+                      <p17>3 Hours</p17>
+                    </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+            </div>
+           </div>
+          </div>
+      </div>
+      
+  </body>
+  <script src="./index.js"></script>
 </html>

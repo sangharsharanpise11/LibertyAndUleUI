@@ -1,221 +1,126 @@
-
-.navbar .navbarContents .leftIcons .searchBar{
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body {
+font-family: Arial;
+background-color: rgb(241, 241, 245);
+}
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+ul li {
+  float: left;
+  width: 30px;
+  
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+ul li a:hover {
+  background-color: green;
+}
+ul li ul li{
   display: none;
 }
-.line11{
-  width: 135px;
-  height: 1px;
-  background-color: grey;
-  margin-top: 10px;
+ul li:hover ul li {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  background-color: cadetblue;
+  width:350px;
+  height: 100px;
+  text-align: left;
+  float: right;
+  /* border: ridge; */
 }
-p101{
-  font-size: 15px;
-    color: cadetblue;
-    margin-left: 15px;
-    word-wrap: break-word;
+.navbar{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  color: black;
+  height: 57px;line-height: 57px;
+  position: fixed;
+  background-color: white;
+  justify-content: space-between;
 }
+.lefiIcons{
+display: flex;color: black;
+font-size: 20px;
+margin-left: -140px;
+} 
+.rightIcons{
+  width: 200px;
+    float: right;color: black;
+    margin-left: 420px;
+}
+ul li ul{
+  padding: 14px;
+}
+/******************************************/
+.image2{
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+.item{
+  display: flex;
+  padding: 3px;
+  justify-content: space-around;
+}
+
+.info{
+  display: grid;
+}
+p000{
+  margin-top: -20px;
+}
+.recent{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/****** repeted *****/
 .inbox,.setting,.logout,.lockscreen{
   display: flex;margin-top: 10px;
   justify-content: space-around;
 }
-
-.notification_wrap .notification_icon .fa-bell{
-  cursor: pointer;
-  margin-left: -207px;
-  margin-top: 31px;
-}
-.message_wrap .message_icon.fa-comment-alt{
-  margin-left: -175px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-.crosshair_wrap .crosshair_icon.fa-crosshairs{
-  margin-left: -140px;
-  cursor: pointer;
-  margin-top: 28px;
-}
-.leftIcons .fa-search {
-  cursor: pointer;
-}
-.dropdown,.dropdown1,.dropdown2{
-  width: 300px;
-  height: 300px;
-  margin-top: 10px;
-  background-color: cadetblue;
-  float: left;
-  overflow: hidden;
-}
-.notification_wrap .dropdown,
-.message_wrap .dropdown1{
-  width: 300px;
-  height: 415px;
-  background-color: white;
-  border-radius: 5px;
-  margin: 55px;
-  padding: 5px;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  display: none;
-  border: ridge;
-}
-
-.profile_wrap .dropdown3{
-  width: 130px;
-  height: 149px;
-  background-color: white;
-  border-radius: 5px;
-  margin: 55px;
-  padding: 5px;
-  position: relative;
-  display: none;
-  border: ridge;
-}
-.crosshair_wrap .dropdown2 {
-  width: 300px;
-  height: 300px;
-  background-color: white;
-  border-radius: 5px;
-  margin: 55px;
-  padding: 5px;
-  position: relative;
-  display: none;
-  border: ridge;
-}
-p000{
+.progress{
   font-size: 15px;
-    color: grey;
-    margin-left: 15px;
-    word-wrap: break-word;
-    margin-top: -12px;
+  color: #678098;
+  margin-left: -14px;
+  font-weight: 500;
 }
-.recent{
-  color: blueviolet;
-    font-size: 18px;
-    background-color: aliceblue;
-    height: 50px;
-    width: 311px;
-    text-align: center;
-    margin-top: -6px;
-    margin-left: -5px;
+p101{
+  font-size: 15px;
+  color: black;
+  margin-left: 15px;
+  word-wrap: break-word;
 }
-.notification_wrap .dropdown .notify_item,
-.message_wrap .dropdown1 .notify_item
-{
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid grey;
-  margin-top: -60px;
+.search-container{
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 14px;
+  width: 300px;position: absolute;
+  height: 200px;z-index: 1;
 }
-
-.crosshair_wrap .dropdown2 .notify_item {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  margin-top: -42px
-}
-
-
-.notification_wrap .dropdown .p,.message_wrap .dropdown1 .p{
-  border-bottom: 1px solid grey;
-}
-
-.notification_wrap .dropdown .notify_item:last-child,
-.message_wrap .dropdown1 .notify_item:last-child,
-.crosshair_wrap .dropdown2.notify_item:last-child
-.profile_wrap .dropdown3 .notify_item:last-child{
-  border-bottom: 0;
-}
-
-.notification_wrap.dropdown .notify_item .notify_img,
-.message_wrap.dropdown1 .notify_item .notify_img
-{
-  margin-right: 15px;
-  margin-top: 43px;
-}
-
-.notification_wrap.dropdown .notify_item .notify_info p span,
-.message_wrap.dropdown1 .notify_item .notify_info p span{
-  color: cadetblue;
-  margin-top: -27px;
-}
-
-.notification_wrap .dropdown .notify_item .notify_info .notify_item,
-.message_wrap .dropdown1 .notify_item .notify_info .notify_item,
-.crosshair_wrap .dropdown2.notify_item.notify_info .notify_item
-{
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid grey;
-  margin-top: -30px;
-}
-
-.image2{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-top: 43px;
-}
-
-.notification_wrap .dropdown:before,
-.message_wrap .dropdown1:before,
-.crosshair_wrap .dropdown2:before
-{
-  content: "";
-  
-}
-
-.notification_wrap .dropdown .active,.message_wrap .dropdown1 .active,.crosshair_wrap .dropdown2 .active{
-display: block;position: absolute;
-
-}
-/*****************************************************************/
 .aaa{
   display: flex;
   justify-content: space-between;
-  margin-top: 41px;
-  color: cadetblue;
- }
-body{
-  width: 100%;
-  height: 100%;
-  background-color:lightgrey;
-  font-family: poppins,sans-serif;
-}
-.navbar {
-  overflow: hidden;
-  background-color: white;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-.icons1 {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-size: 30px;
-  padding: 22px;
-  font-size: 20px!important;
-  padding-left: 0px;
-  outline: none;
-}
-/************************/
+  margin-top: -10px;
+} 
+/*******************   ule  css ******************************************************************/
 .sidebar {
   font-family: arial, sans-serif;
   width: 200px;
@@ -253,7 +158,7 @@ body{
 }
 .progressBar{
   position: relative;
-  margin-top: -15px;
+  margin-top: 0px;
   width: 258px;
   margin-left: 14px;
 }
@@ -343,6 +248,7 @@ body{
   display: block;
   color: black;
   padding: 16px;
+  background-color: white;
   text-decoration: none;
 }
 
@@ -420,13 +326,13 @@ p02{
 }
 .online-earn{
   display: flex;
-  justify-content: space-between;
-  margin-top: -10px;
+    justify-content: space-between;
+    margin-top: 2px;
 }
 .one{
   display: grid;
 }
-.leftIcons {
+/* .leftIcons {
   font-size: 20px;
   margin-left: -776px;
 }
@@ -435,7 +341,7 @@ p02{
   display: flex;
   float: right;
  
-}
+} */
 .content-body{
   width: 1070px;
   margin-top: 83px;
@@ -837,7 +743,4 @@ p23{
   width: 417px;
   margin-top: 8px;
   height: 1px;
-}
-.notification_icon {
-  display: block; 
 }
