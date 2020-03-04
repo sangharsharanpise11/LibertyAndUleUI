@@ -35,12 +35,12 @@ ul li:hover ul li {
   display: block;
   visibility: visible;
   opacity: 1;
-  background-color: cadetblue;
+  background-color: white;
   width:350px;
   height: 100px;
   text-align: left;
   float: right;
-  /* border: ridge; */
+  border: ridge;
 }
 .navbar{
   width: 100%;
@@ -129,6 +129,7 @@ p101{
   height: 100%;
   overflow: auto;
   margin-top: 57px;
+  z-index: -1;
 }
 .amt{
   color: cadetblue;
@@ -332,16 +333,7 @@ p02{
 .one{
   display: grid;
 }
-/* .leftIcons {
-  font-size: 20px;
-  margin-left: -776px;
-}
-.rightIcons{
-  flex-direction: row;
-  display: flex;
-  float: right;
- 
-} */
+
 .content-body{
   width: 1070px;
   margin-top: 83px;
@@ -360,6 +352,7 @@ p02{
 .flex-container {
   display: flex;
   justify-content: space-between;
+  z-index: -1;
 }
 .flex-container > div {
   background-color: white;
@@ -402,6 +395,7 @@ p1{
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+      z-index: -1;
 }
 
 .messageIncome> div {
@@ -424,6 +418,8 @@ p1{
 .threeFlex{
   display: flex;
   justify-content: space-between;
+  z-index: -1;
+
  }
 .threeFlex >div{
   background-color: white;
