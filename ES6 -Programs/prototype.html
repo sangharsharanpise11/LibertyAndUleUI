@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prototype demo</title>
+  </head>
+  <body>
+    <script>
+ var Mobile=function (model){
+   this.model=model;
+   this.price=2444;
+ }
+
+ var samsung=new Mobile('galaxy');
+ var nokia=new Mobile('3110');
+ Mobile.prototype.color='red';
+ document.write(samsung.color);
+ document.write(nokia.color);
+      </script>
+  </body>
+</html>
