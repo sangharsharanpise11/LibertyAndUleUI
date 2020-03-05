@@ -1,42 +1,42 @@
 var async = require('async'); 
 
-// async.series([
-//   function functionOne(callback) {
-//     callback(null,"function One is running")
-//   }, 
-//   function functionTwo(callback) {
-//     callback(null,"function Two is running")
-//   },
-//   function functionThree(callback) {
-//     callback(null,"function Three is running")
-//   }
-// ],function(error,result) {
-//   console.log("Result :",result);
+async.series([
+  function functionOne(callback) {
+    callback(null,"function One is running")
+  }, 
+  function functionTwo(callback) {
+    callback(null,"function Two is running")
+  },
+  function functionThree(callback) {
+    callback(null,"function Three is running")
+  }
+],function(error,result) {
+  console.log("Result :",result);
   
-// })
+})
 
-// async.series([
-//   function(callback) {
-//     console.log('one');
-//     callback(null, 1);
-//   },
-//   function(callback) {
-//     console.log('two');
-//     callback(null, 2);
-//   },
-//   function(callback) {
-//     console.log('three');
-//     callback(null, 3);
-//   }
-// ],
-// function(err, result) {
-//   console.log(result);
-// // results is now equal to [1, 2, 3]
-// // one
-// // two
-// // three
-// // [ 1, 2, 3 ]
-// });
+async.series([
+  function(callback) {
+    console.log('one');
+    callback(null, 1);
+  },
+  function(callback) {
+    console.log('two');
+    callback(null, 2);
+  },
+  function(callback) {
+    console.log('three');
+    callback(null, 3);
+  }
+],
+function(err, result) {
+  console.log(result);
+// results is now equal to [1, 2, 3]
+// one
+// two
+// three
+// [ 1, 2, 3 ]
+});
 
 async.series({
   1: function(callback) {
