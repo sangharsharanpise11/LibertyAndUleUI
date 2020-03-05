@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>replace</title>
+  </head>
+  <body>
+    <script>
+          function myReplace(str,before,after){
+          if(before.toLowerCase()===before){
+            document.write(str.replace(before,after));
+          }
+          else{
+            document.write(str.replace(before,after.replace(after[0],after[0].toUpperCase())));
+          }
+       }
+      //  myReplace("javascript is good","good","verygood");  //both are small
+       myReplace("javascript is Ok","Ok","good");  //good is small but it will display Good
+    </script>
+  </body>
+</html>
